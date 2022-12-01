@@ -12,6 +12,9 @@
 
 /* Mixins, helpers and functions */
 @import "base/mixins";
+@media all and (max-width: 600px) {
+  .discounts {display:block;}
+}
 
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -26,4 +29,12 @@ html {
   justify-content: center;
   font-size: 10rem;
   flex-flow: column;
+}
+
+.discounts{
+    width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
 }
