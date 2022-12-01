@@ -28,12 +28,12 @@ html {
   font-size: 10rem;
   flex-flow: column;
 }
-@media screen and (max-width: 600px) {
-.discounts{
-    width: 100%;
-    height: 100px;
-    background-repeat: no-repeat;
-    background-size: contain;
-
+.discounts {
+  visibility: hidden;
 }
+
+@media (max-width: 600px) {
+  .discounts {
+    visibility: visible;
+  }
 }
